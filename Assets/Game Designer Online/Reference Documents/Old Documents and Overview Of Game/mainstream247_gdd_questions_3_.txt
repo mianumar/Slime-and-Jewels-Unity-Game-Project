@@ -1,0 +1,25 @@
+I will send the offer to you today so I can download all of the assets from your account.
+
+12. There are two ways.
+- We can store the position of the player locally. However, that would mean that the position will not be saved to the user's account which can be a problem if the user switches phone. Also, what would happen to the enemies that have been defeated in the game already? If we are to store how many enemies were defeated and at what position, it can cost $200 for this system alone
+- We can store it on the Playfab back-end. That would be $300 alone for this system. It is a very complex task, so I do not recommend doing the position saving right now. I suggest doing it after the game makes money.
+
+- This is concerning. Saving the position of the chests is also similar to saving the position of the player when they exit. Is there some other way to do this, instead of saving the exact position of the chests? Can we work with numbers on the chests instead?
+
+- This is again tied to the whole player position mechanic. I strongly suggest that we do not do this at this point.
+
+- Thank you
+
+13. Please create an account on Playfab so I can link this game to your account from the start
+
+19. Thank you.
+
+20. Alright. Thank you for this.
+
+21. Alright.
+
+22. Alright. As long as we don't have character customization, I will be able to keep this under $500
+
+24. I do not want the game to cross $500 yet. Boosters can add to testing costs. The cost increase will depend on the amount of boosters and their function.
+
+Alright. Will send the offer soon.

@@ -1,0 +1,19 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!221 &22100000
+AnimatorOverrideController:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: CactusAvatarAnimatorAccessory 6
+  m_Controller: {fileID: 9100000, guid: cb683d27336a86f92a011094efb5d84a, type: 2}
+  m_Clips:
+  - m_OriginalClip: {fileID: 7400000, guid: b6edb98b6dca2939fb018f1d04dce48d, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: 66bd9f3a43d29eba49bcce0969005ff9, type: 2}
+  - m_OriginalClip: {fileID: 7400000, guid: 262bd34af2065df93bdc94347081a2c8, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: 60815f2b2317d062aac75189f330b830, type: 2}
+  - m_OriginalClip: {fileID: 7400000, guid: 3f42ae09549d5520fba090d2abc2268a, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: 6f27c4f777d5c0e12a233870236b58bf, type: 2}
+  - m_OriginalClip: {fileID: 7400000, guid: 8d7fa8aec11ff54d8a23659e63946b77, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: b79bbe946f7780d38a3bcf9b73458275, type: 2}

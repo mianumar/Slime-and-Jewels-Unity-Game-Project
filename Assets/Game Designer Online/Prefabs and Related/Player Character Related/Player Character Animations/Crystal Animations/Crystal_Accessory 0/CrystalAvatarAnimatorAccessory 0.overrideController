@@ -1,0 +1,19 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!221 &22100000
+AnimatorOverrideController:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: CrystalAvatarAnimatorAccessory 0
+  m_Controller: {fileID: 9100000, guid: cb683d27336a86f92a011094efb5d84a, type: 2}
+  m_Clips:
+  - m_OriginalClip: {fileID: 7400000, guid: b6edb98b6dca2939fb018f1d04dce48d, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: 6a3bfa323bb4eab4ca59bcf75b16fdb4, type: 2}
+  - m_OriginalClip: {fileID: 7400000, guid: 262bd34af2065df93bdc94347081a2c8, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: 05bb782b85fc3aa42a12fa834ba0812e, type: 2}
+  - m_OriginalClip: {fileID: 7400000, guid: 3f42ae09549d5520fba090d2abc2268a, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: bf8078ad2ee02f34a817d88b66d44da6, type: 2}
+  - m_OriginalClip: {fileID: 7400000, guid: 8d7fa8aec11ff54d8a23659e63946b77, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: c93dde99e73923d4fa07735a8d97e61d, type: 2}

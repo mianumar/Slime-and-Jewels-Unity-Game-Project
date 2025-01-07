@@ -1,0 +1,19 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!221 &22100000
+AnimatorOverrideController:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: ElectricAvatarAnimatorGlasses 3
+  m_Controller: {fileID: 9100000, guid: cb683d27336a86f92a011094efb5d84a, type: 2}
+  m_Clips:
+  - m_OriginalClip: {fileID: 7400000, guid: b6edb98b6dca2939fb018f1d04dce48d, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: 6e9f078548a45e8418c4ebfc3c302acf, type: 2}
+  - m_OriginalClip: {fileID: 7400000, guid: 262bd34af2065df93bdc94347081a2c8, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: 6133845c5da2def40aea968152494dad, type: 2}
+  - m_OriginalClip: {fileID: 7400000, guid: 3f42ae09549d5520fba090d2abc2268a, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: ccba8f6d109b66b40bcb5d09bb327cc8, type: 2}
+  - m_OriginalClip: {fileID: 7400000, guid: 8d7fa8aec11ff54d8a23659e63946b77, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: e65f2e7c289aa6944afd65ad2471350a, type: 2}

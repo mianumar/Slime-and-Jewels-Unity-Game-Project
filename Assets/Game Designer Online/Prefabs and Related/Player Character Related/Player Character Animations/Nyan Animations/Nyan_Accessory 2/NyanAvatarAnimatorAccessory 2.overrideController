@@ -1,0 +1,19 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!221 &22100000
+AnimatorOverrideController:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: NyanAvatarAnimatorAccessory 2
+  m_Controller: {fileID: 9100000, guid: cb683d27336a86f92a011094efb5d84a, type: 2}
+  m_Clips:
+  - m_OriginalClip: {fileID: 7400000, guid: b6edb98b6dca2939fb018f1d04dce48d, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: d648e899ae778d96d8b1f92cf18f1761, type: 2}
+  - m_OriginalClip: {fileID: 7400000, guid: 262bd34af2065df93bdc94347081a2c8, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: a56fc83cbbcfdb722b7b35491ab57d3e, type: 2}
+  - m_OriginalClip: {fileID: 7400000, guid: 3f42ae09549d5520fba090d2abc2268a, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: 3bdb87c122e26b1138d50fffcaf6abe6, type: 2}
+  - m_OriginalClip: {fileID: 7400000, guid: 8d7fa8aec11ff54d8a23659e63946b77, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: 4591f409a04b45d529bd4cfd395a6629, type: 2}

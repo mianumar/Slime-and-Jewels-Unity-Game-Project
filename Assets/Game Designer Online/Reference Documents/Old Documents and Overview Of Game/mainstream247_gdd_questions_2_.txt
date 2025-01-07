@@ -1,0 +1,58 @@
+ 
+1. I will try my best to keep it at $500, if we are clear about the results. The only way costs go up is when something that wasn't expected was asked or requires a lot more time than originally thought. A simple 2D platformer can definitely be created under $500.
+
+2. I understand. I can still take a look at them if you can give me the .unitypackage or we can create the $5 for me to receive the packages. You can also download the packages into a Unity 2021.3.25 and give me the entire project files.
+
+3. I understand. Unity has built-in support for that.
+
+4. Ads will be on
+- Main Menu (Rewarded Video) - This will be required for the booster which is required it seems. They can watch 5 more ads, although I do not know how that will be allowed that. We can tackle this later.
+
+5. All privacy policies are different. I can give a privacy policy to you, but that game did not collect email or passwords, or any user data. So that privacy policy will probably not work on this game.
+
+6. Thank you.
+
+7. My pleasure
+
+8. Alright. When I create a project, and its name will be Slime and Jewels
+
+9. There are many. I do not want the client to be limited to a few. Sometimes I find assets on Graphics River, Pinterest and other website. However, be very careful about the liscenses. I know that ShutterStock is integrated with Fiverr, but I do not know whether they have game assets or not.
+
+10. Alright! I hope we have the graphics for it.
+
+11. Google handles it, but Google does not make an account for the player. So we will have to handle it ourselves.
+
+12. Here are my main concerns
+- Position on the level cannot be covered within $500. We can store levels unlocked, but we cannot have the exact position. It is a very difficult task.
+- Please tell me about "what chests have been collected" part. I don't understand this part.
+- About the enemies, we just have to store the enemies that have been defeated? Just their number?
+- We will make a Playfab account, not a Google or Apple account. I know that Unity does automatically unlock all non-consumable items, but it doesn't work very well.
+
+13. Please note that it will be a Playfab account.
+
+14. Okay
+
+15. Alright
+
+16. I wish it actually had it. There is a huge demand for that for a very long time.
+
+17. They will be saved on their Playfab account.
+
+18. I understand. Probably when I start developing, I will understand how it works better.
+
+19. Like I stated before, to keep the game under $500, please do not include the save position in level task. It is very difficult. Although you have stated that you are willing to pay more, I strongly suggest that we get the basic game made first, as I believe that the document and the details given makes me feel it is a not a simple 2D platformer. It has randomness and replayability. I strongly suggest that we focus on getting the main game done first, as I am quite concerned about it.
+
+20. I wish this was explained in terms of a gameplay loop and as a list. I may have to study this and break it down. There is a lot of text, which makes me worry I might miss an important detail.
+
+21. - So pretige is basically just the number of times the game is completed from start to finish by a single character?
+- So once I get 100 presitage, I can only get 40 tokens and never more than 40 tokens for completing a single level?
+
+22. Alright. What would be unique about the characters? Why would anyone buy them?
+
+23. Alright. I am glad we have made that clear.
+
+24. What concerns me about this is the fact that you listed some boosters or benifits which I will also have to factor in while coding, making it more than a simple 2D platformer.
+
+25. Alright.
+
+For the registration system, I strongly suggest that you download all the assets and give them to me. I do not want you to make any finnanical commitments yet, unless I am sure that I am providing value. I think due to the way the text is written, the game seem to be more complicated than it actually is, which concerns. Can we please make an arragement where I can work for a while without any finnanical commitments until the game starts taking shape? This is so I am fully confident that the game is not as complex as I think it is right now.

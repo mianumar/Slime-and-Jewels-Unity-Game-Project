@@ -1,0 +1,32 @@
+1. I understand that you wish to keep this under $500
+2. The game is going to be a Mario Clone but will use Custom Graphics
+3. The game will have in-app purchases
+4. Unity Ads will be used according to the clients requirements. The client will explain where to use the Unity Assets and where do they want the ads to show
+5. It needs to be uploaded on the Google Play Store and will be a free application. For this, we will require a Privacy Policy. Please look into maintaining a website with a privary policy, as Google does not allow games without a privacy policy to be uploaded anymore. We will also be using Unity Ads, so we may have to tell Google exactly what data is being collected by us. Games usually get rejected when they are misconfigured on the store, which is easily handled by reading what Google requires. For example, an application can get rejected if we fail to tell Google exactly what data we are collecting, and Google finds out that we are actually collecting more data than we said we do.
+6. Another seller will be hired to create the iOS port and upload it to the client's App Store Dashboard.
+7. We always provide the source code at the end of every module
+
+8. The name of the project is Slime and Jewels
+9. We may have to acquire the art instead of creating art from scratch as making art from scratch will exceed the $500 limit. There are websites that sell art assets that can be used for games. We may need to simply acquire these assets to keep things in budget.
+10. I would like to know about the randomized loot boxes and how will they work in the game.
+11. Payments are handled by Google when the game is uploaded to the Google Play Store. They handle digital store items. Unity just has a system that will allow us to add in-app purchases, but they are not directly handled by the game.
+12. There are certain mobiles that can still store data even after the application is deleted. We can save data if we want to. However, if the player clears that cache of the application, saved data is usually lost.
+13. In order for users to play with an account, we will need to integrate Playfab. This may take things out of budget.
+14. We do not offer two factor authentication. Playfab does have this feature, but we have never used it, neither have we looked into it.
+15. Mail verification can be done via Playfab.
+16. As I was writing this, I checked whether or not Playfab has 2FA. It appears that they do not have one.
+17. We can save the purchases to their account. However, this is going to further may the system more complex as the data that is stored in the player's account needs to be updated with every new purchase. And in the future if we have more items to sell, we will need to make sure that we don't end up deleting the user's previous save data. It is not as straight-forward as it may seem.
+18. Please tell me about Endless progression that you mentioned in the design pillars.
+
+19. Please explain what does start where they left off meant. Do I have to save their exact position or will we simply start them at the start of level that they left. If you want an exact position system (which also means we may need to tell the game how many enemies they have destroyed), the game may not be covered in the budget.
+20. Please tell mea bout the token system. I do not understand what it does.
+21. I do not understand the prestige level system. Please explain the entire level system to me in a list form, as a loop.
+
+22. I understand that some of the characters will be purchaseable through the in-game shop.
+23. It appears that there is some character customization that is needed. That cannot be covered at all in the $500 budget. We can have a shop with pre-made characters though.
+
+24. What is the purpose of the entire token system and the chests?
+
+25. How will the perk system work
+
+It is strongly suggested to make a shorter version of this document only for the module that you want the team to work on first. The document is too long to be used for the creation of a module. We can make a module together if you find it difficult to create one yourself.

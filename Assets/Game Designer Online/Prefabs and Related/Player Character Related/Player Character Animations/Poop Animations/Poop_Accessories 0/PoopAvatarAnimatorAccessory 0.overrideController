@@ -1,0 +1,19 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!221 &22100000
+AnimatorOverrideController:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: PoopAvatarAnimatorAccessory 0
+  m_Controller: {fileID: 9100000, guid: cb683d27336a86f92a011094efb5d84a, type: 2}
+  m_Clips:
+  - m_OriginalClip: {fileID: 7400000, guid: b6edb98b6dca2939fb018f1d04dce48d, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: c9d4b823a2b3f7b54980d13d3e219df0, type: 2}
+  - m_OriginalClip: {fileID: 7400000, guid: 262bd34af2065df93bdc94347081a2c8, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: a9b95ded4b8c1302a8f08d51c671a92c, type: 2}
+  - m_OriginalClip: {fileID: 7400000, guid: 3f42ae09549d5520fba090d2abc2268a, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: e99a2d62053419a2cba19e4783ae646c, type: 2}
+  - m_OriginalClip: {fileID: 7400000, guid: 8d7fa8aec11ff54d8a23659e63946b77, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: ce192160e2ded1d76a7d17444665c358, type: 2}

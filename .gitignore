@@ -73,5 +73,5 @@ crashlytics-build.properties
 /[Aa]ssets/[Ss]treamingAssets/aa/*
 
 
-/[Aa]ssets/Assets From Client
-/[Aa]ssets/Game Designer Online
+/[Aa]ssets/Assets From Client/
+/[Aa]ssets/Game Designer Online/Assets for Level Design (Taken from Assets)
