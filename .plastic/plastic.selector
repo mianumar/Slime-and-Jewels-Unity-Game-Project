@@ -1,0 +1,4 @@
+repository "mainstream247_2DPlatformer_5_Source@Altamush_Khan_Attish@cloud"
+  path "/"
+    br "/main"
+    co "/main"

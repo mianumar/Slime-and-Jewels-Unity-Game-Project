@@ -1,0 +1,64 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!78 &1
+TagManager:
+  serializedVersion: 2
+  tags:
+  - storeContainer
+  - Reward
+  - RandomPlayerToggle
+  - coinsText
+  - LevelEnd
+  - Enemy
+  - RestartTrigger
+  - Platform
+  - Chest
+  layers:
+  - Default
+  - TransparentFX
+  - Ignore Raycast
+  - Enemy
+  - Water
+  - UI
+  - Ground
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  m_SortingLayers:
+  - name: sky
+    uniqueID: 2174423969
+    locked: 0
+  - name: background
+    uniqueID: 1632080935
+    locked: 0
+  - name: walls
+    uniqueID: 1223685867
+    locked: 0
+  - name: Default
+    uniqueID: 0
+    locked: 0
+  - name: tiles
+    uniqueID: 1585994975
+    locked: 0

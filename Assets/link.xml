@@ -1,0 +1,7 @@
+﻿<linker>
+    <assembly fullname="AssemblyCSharp">
+        <type fullname="Game_Designer_Online.Scripts.Playfab_Related_Scripts.HandleUserDataFromPlayFabServer">
+            <method signature="System.Void .ctor()"/>
+        </type>
+    </assembly>
+</linker>
