@@ -721,7 +721,8 @@ namespace Game_Designer_Online.Scripts.Playfab_Related
             if (Application.platform == RuntimePlatform.WindowsEditor ||
                 Application.platform == RuntimePlatform.WindowsPlayer ||
                 Application.platform == RuntimePlatform.LinuxPlayer ||
-                Application.platform == RuntimePlatform.LinuxEditor)
+                Application.platform == RuntimePlatform.LinuxEditor ||
+                Application.platform == RuntimePlatform.OSXEditor)
             {
                 // A new login request for Windows and Linux
                 var anonymousLoginRequest = new LoginWithCustomIDRequest
@@ -814,7 +815,8 @@ namespace Game_Designer_Online.Scripts.Playfab_Related
                         if (Application.platform == RuntimePlatform.WindowsEditor
                             || Application.platform == RuntimePlatform.WindowsPlayer
                             || Application.platform == RuntimePlatform.LinuxEditor
-                            || Application.platform == RuntimePlatform.LinuxPlayer)
+                            || Application.platform == RuntimePlatform.LinuxPlayer
+                            || Application.platform == RuntimePlatform.OSXEditor)
                         {
                             try
                             {
