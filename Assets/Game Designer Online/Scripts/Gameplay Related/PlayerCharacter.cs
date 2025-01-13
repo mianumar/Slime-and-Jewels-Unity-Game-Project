@@ -991,7 +991,8 @@ namespace Game_Designer_Online.Scripts.Gameplay_Related
             // This will only run if we are not on mobile
             if (Application.platform == RuntimePlatform.WindowsEditor 
                 || Application.platform == RuntimePlatform.WindowsPlayer
-                || Application.platform == RuntimePlatform.LinuxEditor)
+                || Application.platform == RuntimePlatform.LinuxEditor
+                || Application.platform == RuntimePlatform.OSXEditor)
             {
                 moveInput.x = Input.GetAxisRaw("Horizontal");
                 moveInput.y = Input.GetAxisRaw("Vertical");

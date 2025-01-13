@@ -111,7 +111,8 @@ namespace Game_Designer_Online.Scripts.Gameplay_Related
             //If we are running this on the windows editor or windows player,
             //then we will upload the data to the server
             if (Application.platform == RuntimePlatform.WindowsEditor
-                || Application.platform == RuntimePlatform.WindowsPlayer)
+                || Application.platform == RuntimePlatform.WindowsPlayer
+                || Application.platform == RuntimePlatform.OSXEditor)
             {
                 // Getting all the values required to upload the data to the server
                 int tokens = PlayerPrefs.GetInt(StoreMenuCanvas.PlayerTokensKeyReference);

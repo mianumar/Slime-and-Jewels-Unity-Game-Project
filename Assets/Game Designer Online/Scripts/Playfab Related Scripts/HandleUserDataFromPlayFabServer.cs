@@ -178,7 +178,8 @@ namespace Game_Designer_Online.Scripts.Playfab_Related_Scripts
                     if (Application.platform == RuntimePlatform.WindowsEditor
                         || Application.platform == RuntimePlatform.WindowsPlayer
                         || Application.platform == RuntimePlatform.LinuxEditor
-                        || Application.platform == RuntimePlatform.LinuxPlayer)
+                        || Application.platform == RuntimePlatform.LinuxPlayer
+                        || Application.platform == RuntimePlatform.OSXEditor)
                     {
                         try
                         {
@@ -1389,7 +1390,8 @@ namespace Game_Designer_Online.Scripts.Playfab_Related_Scripts
             // If this is running on the windows editor or windows player, then we will set the values
             if (Application.platform == RuntimePlatform.WindowsEditor 
                 || Application.platform == RuntimePlatform.WindowsPlayer || 
-                Application.platform == RuntimePlatform.LinuxEditor)
+                Application.platform == RuntimePlatform.LinuxEditor
+                || Application.platform == RuntimePlatform.OSXEditor)
             {
                 // Object value for storing the value of the key
                 object value;

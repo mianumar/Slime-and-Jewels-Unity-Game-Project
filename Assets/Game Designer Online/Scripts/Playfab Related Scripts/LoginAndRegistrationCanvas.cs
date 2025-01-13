@@ -585,6 +585,7 @@ namespace Game_Designer_Online.Scripts.Playfab_Related
         /// </summary>
         private void TryToPerformGuestLoginViaPlayFab()
         {
+            Debug.Log("TryToPerformGuestLoginViaPlayFab Application.platform : " + Application.platform);
             // Anonymous login for android
             if (Application.platform == RuntimePlatform.Android)
             {
