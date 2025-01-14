@@ -12,6 +12,7 @@ using Unity.Services.Core.Environments;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
+using UnityEditor.PackageManager;
 
 namespace Game_Designer_Online.Scripts.Playfab_Related
 {
@@ -193,7 +194,7 @@ namespace Game_Designer_Online.Scripts.Playfab_Related
                     GetUserAccountInfo = true,
                 },
             };
-
+            
             PlayFabClientAPI.RegisterPlayFabUser(
                 newUserRegistrationRequest,
                 result =>
@@ -477,6 +478,7 @@ namespace Game_Designer_Online.Scripts.Playfab_Related
                 },
             };
 
+
             PlayFabClientAPI.LoginWithEmailAddress(
                 loginWithEmailAndPasswordRequest,
                 result =>
@@ -538,6 +540,81 @@ namespace Game_Designer_Online.Scripts.Playfab_Related
                     }
                 }
             );
+        }
+
+        #endregion
+
+        #region On Login with Apple ID 
+
+        private void TryToLoginWithAppleIdToPlayFab()
+        {
+            var loginWithAppleIdRequest = new LoginWithAppleRequest
+            {
+                IdentityToken = "",
+                TitleId = string.Empty,
+
+            };
+
+            PlayFabClientAPI.LoginWithApple(loginWithAppleIdRequest,
+                resultCallback =>
+                {
+                    Debug.Log("Apple Login successfully . ");
+
+                    //Display the message on the login menu message text
+                    StartCoroutine(Routine_LoginMenuMessageText("Verifying login details!"));
+
+                    //Loading the next scene here
+                    StartCoroutine(Routine_LoadNextSceneOnLoginIfVerified(resultCallback));
+                },
+                error =>
+                {
+                    //Check which type of error was it
+                    var errorType = error.Error;
+
+                    //A string that will be used to display the error message
+                    string errorMessageString = "";
+
+                    //Switch case to handle the error type
+                    switch (errorType)
+                    {
+                        case PlayFabErrorCode.UsernameNotAvailable:
+                            errorMessageString = "Username is not available";
+                            break;
+                        case PlayFabErrorCode.InvalidUsername:
+                            errorMessageString = "Player With This Username Does Not Exist";
+                            break;
+                        case PlayFabErrorCode.InvalidPassword:
+                            errorMessageString = "You Entered The Incorrect Password";
+                            break;
+                        case PlayFabErrorCode.UserisNotValid:
+                            break;
+                        case PlayFabErrorCode.AccountNotFound:
+                            errorMessageString = "Username/Account Does Not Exist";
+                            break;
+                        default:
+                            errorMessageString = error.ErrorMessage;
+                            break;
+                    }
+
+                    //Display the message on the login menu message text
+                    StartCoroutine(Routine_LoginMenuMessageText(errorMessageString));
+
+                    //Turning the login buttons on again
+                    loginMenuBackButton.interactable = true;
+                    loginMenuLoginButton.interactable = true;
+                    forgotPasswordButton.interactable = true;
+
+                    try
+                    {
+                        // Playing the negative sound
+                        SoundManager.Instance!.PlayMenuAndInGameStoreNegativeClickSounds();
+                    }
+                    catch (Exception e)
+                    {
+                        Debug.LogException(e);
+                    }
+
+                });
         }
 
         #endregion
