@@ -59,6 +59,7 @@ namespace Game_Designer_Online.Scripts.Playfab_Related
             //Add listeners to the login menu buttons
             loginMenuBackButton.onClick.AddListener(OnLoginMenuBackButtonClicked);
             loginMenuLoginButton.onClick.AddListener(OnLoginMenuLoginButtonClicked);
+            appleLoginButton.onClick.AddListener(AppleLoginBtn);
 
             //Add listeners to the register menu buttons
             registerMenuBackButton.onClick.AddListener(OnRegisterMenuBackButtonClicked);
@@ -1494,6 +1495,11 @@ namespace Game_Designer_Online.Scripts.Playfab_Related
             }
         }
 
+        public void AppleLoginBtn()
+        {
+            AppleSignInManager.instance.LoginWithApple(SignInWithAppleOnFirebase);
+        }
+
         /// <summary>
         /// Runs when the register button is clicked
         /// </summary>
@@ -1610,6 +1616,8 @@ namespace Game_Designer_Online.Scripts.Playfab_Related
         /// Reference to the login menu login button
         /// </summary>
         [SerializeField] private Button loginMenuLoginButton;
+
+        [SerializeField] private Button appleLoginButton;
 
         /// <summary>
         /// Runs when the login menu back button is clicked
