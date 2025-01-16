@@ -13,6 +13,8 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 using UnityEditor.PackageManager;
+using AppleAuth.Interfaces;
+using System.Text;
 
 namespace Game_Designer_Online.Scripts.Playfab_Related
 {
@@ -547,12 +549,13 @@ namespace Game_Designer_Online.Scripts.Playfab_Related
 
         #region On Login with Apple ID 
 
-        private void TryToLoginWithAppleIdToPlayFab()
+        private void TryToLoginWithAppleIdToPlayFab(IAppleIDCredential appleIdCredential, string rawNonce)
         {
+            Debug.Log("TryToLoginWithAppleIdToPlayFab");
             var loginWithAppleIdRequest = new LoginWithAppleRequest
             {
-                IdentityToken = "",
-                TitleId = string.Empty,
+                IdentityToken = appleIdCredential.IdentityToken.ToString(),
+                //TitleId = string.Empty,
 
             };
 
@@ -1497,9 +1500,9 @@ namespace Game_Designer_Online.Scripts.Playfab_Related
 
         public void AppleLoginBtn()
         {
-            AppleSignInManager.instance.LoginWithApple(SignInWithAppleOnFirebase);
+            AppleSignInManager.instance.LoginWithApple(TryToLoginWithAppleIdToPlayFab);
+            Debug.Log("AppleLoginBtn");
         }
-
         /// <summary>
         /// Runs when the register button is clicked
         /// </summary>
