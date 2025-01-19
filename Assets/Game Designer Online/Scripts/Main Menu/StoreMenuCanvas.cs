@@ -51,7 +51,7 @@ namespace Game_Designer_Online.Scripts.Main_Menu
         /// All of the strings that are require to make the in app purchases work
         /// </summary>
         private const string FiveShieldProductId = "fiveshield",
-        FiveHealthProductId = "fivehealth",
+        FiveHealthProductId = "fivehealthnew",
         SeventyFiveTokensProductId = "seventyfivertokens",
         OneHundredAndFiftyTokensProductId = "onehundredandfiftytokens",
         ThreeHundredTokensProductId = "threehundredtokens",
