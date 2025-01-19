@@ -570,6 +570,9 @@ namespace Game_Designer_Online.Scripts.Playfab_Related
                     StartCoroutine(Routine_LoginMenuMessageText("Verifying login details!"));
                     Debug.Log("Verifying login details! ");
 
+                    // Telling the game that this is not a guest login
+                    PlayerPrefs.SetInt(IsGuestKey, 0);
+
                     //Loading the next scene here
                     StartCoroutine(SetupPlayerDisplayNameAfterLoginIsSuccessful(resultCallback));
                     StartCoroutine(Routine_LoginMenuMessageText("Login Successful!"));
