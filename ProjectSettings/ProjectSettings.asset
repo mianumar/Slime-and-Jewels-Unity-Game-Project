@@ -139,7 +139,7 @@ PlayerSettings:
   loadStoreDebugModeEnabled: 0
   visionOSBundleVersion: 1.0
   tvOSBundleVersion: 1.0
-  bundleVersion: 0.60
+  bundleVersion: 1.2
   preloadedAssets: []
   metroInputSource: 0
   wsaTransparentSwapchain: 0
@@ -163,12 +163,13 @@ PlayerSettings:
   applicationIdentifier:
     Android: com.GameDesignerOnline.SlimeandJewels
     Standalone: com.Game-Designer-Online.mainstream247-2DPlatformer
+    iPhone: com.ha.SlimeandJewels
   buildNumber:
     Standalone: 0
     VisionOS: 0
     iPhone: 0
     tvOS: 0
-  overrideDefaultApplicationIdentifier: 0
+  overrideDefaultApplicationIdentifier: 1
   AndroidBundleVersionCode: 60
   AndroidMinSdkVersion: 24
   AndroidTargetSdkVersion: 34

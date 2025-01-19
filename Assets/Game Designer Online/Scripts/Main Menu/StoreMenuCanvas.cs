@@ -50,12 +50,12 @@ namespace Game_Designer_Online.Scripts.Main_Menu
         /// <summary>
         /// All of the strings that are require to make the in app purchases work
         /// </summary>
-        private const string FiveShieldProductId = "fiveshield",
+        private const string FiveShieldProductId = "fiveshieldnew",
         FiveHealthProductId = "fivehealthnew",
-        SeventyFiveTokensProductId = "seventyfivertokens",
+        SeventyFiveTokensProductId = "seventyfivertokensnew",
         OneHundredAndFiftyTokensProductId = "onehundredandfiftytokens",
-        ThreeHundredTokensProductId = "threehundredtokens",
-        FiveHundredTokensProductId = "fivehundredtokens";
+        ThreeHundredTokensProductId = "threehundredtokensnew",
+        FiveHundredTokensProductId = "fivehundredtokensnew";
 
         [Header("Shop Buttons Related")]
         // Reference to the five shield button

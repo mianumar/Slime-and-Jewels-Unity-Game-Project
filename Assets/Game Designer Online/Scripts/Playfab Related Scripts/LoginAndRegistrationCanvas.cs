@@ -572,11 +572,15 @@ namespace Game_Designer_Online.Scripts.Playfab_Related
 
                     // Telling the game that this is not a guest login
                     PlayerPrefs.SetInt(IsGuestKey, 0);
+                        // Getting the playfab id
+                    var playFabId = resultCallback.PlayFabId;
+
+                       // Validating the user data
+                    AnonymousLoginDataValidator(playFabId);
 
                     //Loading the next scene here
-                    StartCoroutine(SetupPlayerDisplayNameAfterLoginIsSuccessful(resultCallback));
-                    StartCoroutine(Routine_LoginMenuMessageText("Login Successful!"));
-                    StartCoroutine(Routine_LoadNextSceneOnLoginOrRegistration());
+                    //StartCoroutine(Routine_LoginMenuMessageText("Login Successful!"));
+                    //StartCoroutine(Routine_LoadNextSceneOnLoginOrRegistration());
 
                 },
                 error =>
@@ -630,7 +634,8 @@ namespace Game_Designer_Online.Scripts.Playfab_Related
                     }
                     catch (Exception e)
                     {
-                        Debug.LogException(e);
+                        Debug.LogError(e.StackTrace);
+
                     }
 
                 });
@@ -650,8 +655,10 @@ namespace Game_Designer_Online.Scripts.Playfab_Related
             //This is the request that will be used to update the user's display name
             var updateDisplayNameRequest = new UpdateUserTitleDisplayNameRequest();
             
+            
             //Getting the username from the result
             var username = result.InfoResultPayload.AccountInfo.Username;
+            Debug.Log("username  :: "  + username);
             
             //Setting the display name to the username that was given during registration
             updateDisplayNameRequest.DisplayName = username;
