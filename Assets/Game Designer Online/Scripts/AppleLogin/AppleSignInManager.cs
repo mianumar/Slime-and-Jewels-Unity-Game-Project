@@ -19,7 +19,7 @@ public class AppleSignInManager : MonoBehaviour
     public static AppleSignInManager instance;
 
     [SerializeField] private Button appleLogin;
-    [SerializeField] private Button googleLogin;
+    //[SerializeField] private Button googleLogin;
 
     private string AppleUserIdKey = "AppleUserId";
 
@@ -36,7 +36,7 @@ public class AppleSignInManager : MonoBehaviour
             // Creates an Apple Authentication manager with the deserializer
             this.appleAuthManager = new AppleAuthManager(deserializer);
             appleLogin.gameObject.SetActive(true);
-            googleLogin.gameObject.SetActive(false);
+            //googleLogin.gameObject.SetActive(false);
         }
 
     }
@@ -91,8 +91,13 @@ public class AppleSignInManager : MonoBehaviour
                                 appleIdCredential.AuthorizationCode.Length);
                     if (playfabCallback != null)  //integration of apple login with firebase
                     {
+                        Debug.Log("playfabCallback CALL" +  appleIdCredential.Email);
                         //AlertManager.ShowAlert($"Firebase callback successfully.");
                         playfabCallback(appleIdCredential, rawNonce);
+                    }
+                    else
+                    {
+                        Debug.Log("playfabCallback IS NULL" +  appleIdCredential.Email);
                     }
 
                     Debug.Log($"Sign-in successful! User ID: {userId} , {email}");

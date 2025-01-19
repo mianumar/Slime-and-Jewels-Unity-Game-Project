@@ -9783,6 +9783,7 @@ GameObject:
   - component: {fileID: 4159789983411301133}
   - component: {fileID: 2424537356506606335}
   - component: {fileID: 6664077073689619019}
+  - component: {fileID: 5111687478760861252}
   m_Layer: 5
   m_Name: LoginAndRegistrationCanvasPrefab
   m_TagString: Untagged
@@ -9928,6 +9929,20 @@ MonoBehaviour:
   resendVerificationEmailMenu: {fileID: 6064573017089730671}
   guestLoginWarningMenu: {fileID: 8268094681278561941}
   gameTitleText: {fileID: 6945250922365666212}
+--- !u!114 &5111687478760861252
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8903927015485419405}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 880ab4fdce86fb04bb3803791474bfbb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  appleLogin: {fileID: 1436051431357693558}
+  googleLogin: {fileID: 0}
 --- !u!1 &9060741917625035678
 GameObject:
   m_ObjectHideFlags: 0

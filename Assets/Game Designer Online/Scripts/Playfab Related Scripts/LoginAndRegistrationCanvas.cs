@@ -12,7 +12,7 @@ using Unity.Services.Core.Environments;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
-using UnityEditor.PackageManager;
+//using UnityEditor.PackageManager;
 using AppleAuth.Interfaces;
 using System.Text;
 
@@ -551,11 +551,13 @@ namespace Game_Designer_Online.Scripts.Playfab_Related
 
         private void TryToLoginWithAppleIdToPlayFab(IAppleIDCredential appleIdCredential, string rawNonce)
         {
-            Debug.Log("TryToLoginWithAppleIdToPlayFab");
+            Debug.Log("TryToLoginWithAppleIdToPlayFab :: " + appleIdCredential.IdentityToken);
             var loginWithAppleIdRequest = new LoginWithAppleRequest
             {
-                IdentityToken = appleIdCredential.IdentityToken.ToString(),
-                //TitleId = string.Empty,
+                IdentityToken = System.Text.Encoding.UTF8.GetString(appleIdCredential.IdentityToken),
+                //IdentityToken = Convert.ToBase64String(appleIdCredential.IdentityToken),
+                TitleId = "E4A61",
+                CreateAccount = true,
 
             };
 
@@ -566,6 +568,7 @@ namespace Game_Designer_Online.Scripts.Playfab_Related
 
                     //Display the message on the login menu message text
                     StartCoroutine(Routine_LoginMenuMessageText("Verifying login details!"));
+                    Debug.Log("Verifying login details! ");
 
                     //Loading the next scene here
                     StartCoroutine(Routine_LoadNextSceneOnLoginIfVerified(resultCallback));
@@ -599,6 +602,8 @@ namespace Game_Designer_Online.Scripts.Playfab_Related
                             errorMessageString = error.ErrorMessage;
                             break;
                     }
+                    Debug.Log("LOGIN ERROR TYPE :: "+ errorType);
+                    Debug.Log("LOGIN ERROR MESSAGE :: "+ errorMessageString);
 
                     //Display the message on the login menu message text
                     StartCoroutine(Routine_LoginMenuMessageText(errorMessageString));
@@ -1139,9 +1144,10 @@ namespace Game_Designer_Online.Scripts.Playfab_Related
                         //Using Newtonsoft.Json to convert the result into a dictionary
                         var resultDictionary = 
                             JsonConvert.DeserializeObject<Dictionary<string, object>>(result.FunctionResult.ToString());
-                    
+                        Debug.Log("resultDictionary Count :: "+resultDictionary.Count);
                         //Getting the value of the 'message' key
                         var message = resultDictionary["message"];
+                        Debug.Log("resultDictionary MESSAGE" + message);
 
                         //Converting message into a dictionary
                         var messageDictionary = 
