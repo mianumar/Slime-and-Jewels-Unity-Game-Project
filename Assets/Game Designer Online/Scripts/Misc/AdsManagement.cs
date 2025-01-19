@@ -50,7 +50,7 @@ namespace Game_Designer_Online.Scripts.Misc
 
             #if UNITY_IOS
             
-            Advertisement.Load("Interstitial_IOS", this);
+            Advertisement.Load("Interstitial_iOS", this);
             
             #endif
         }
