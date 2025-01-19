@@ -549,7 +549,7 @@ namespace Game_Designer_Online.Scripts.Playfab_Related
 
         #region On Login with Apple ID 
 
-        private void TryToLoginWithAppleIdToPlayFab(IAppleIDCredential appleIdCredential, string rawNonce)
+        private void TryToLoginWithAppleIdToPlayFab(IAppleIDCredential appleIdCredential, string rawNonce , bool craeteAccount)
         {
             Debug.Log("TryToLoginWithAppleIdToPlayFab :: " + appleIdCredential.IdentityToken);
             var loginWithAppleIdRequest = new LoginWithAppleRequest
@@ -557,7 +557,7 @@ namespace Game_Designer_Online.Scripts.Playfab_Related
                 IdentityToken = System.Text.Encoding.UTF8.GetString(appleIdCredential.IdentityToken),
                 //IdentityToken = Convert.ToBase64String(appleIdCredential.IdentityToken),
                 TitleId = "E4A61",
-                CreateAccount = true,
+                CreateAccount = craeteAccount,
 
             };
 
@@ -571,7 +571,10 @@ namespace Game_Designer_Online.Scripts.Playfab_Related
                     Debug.Log("Verifying login details! ");
 
                     //Loading the next scene here
-                    StartCoroutine(Routine_LoadNextSceneOnLoginIfVerified(resultCallback));
+                    StartCoroutine(SetupPlayerDisplayNameAfterLoginIsSuccessful(resultCallback));
+                    StartCoroutine(Routine_LoginMenuMessageText("Login Successful!"));
+                    StartCoroutine(Routine_LoadNextSceneOnLoginOrRegistration());
+
                 },
                 error =>
                 {
@@ -597,6 +600,10 @@ namespace Game_Designer_Online.Scripts.Playfab_Related
                             break;
                         case PlayFabErrorCode.AccountNotFound:
                             errorMessageString = "Username/Account Does Not Exist";
+                            {
+                                // Create new Playfab account if not found.
+                                TryToLoginWithAppleIdToPlayFab(appleIdCredential, rawNonce, true);
+                            }
                             break;
                         default:
                             errorMessageString = error.ErrorMessage;
@@ -1509,6 +1516,9 @@ namespace Game_Designer_Online.Scripts.Playfab_Related
             AppleSignInManager.instance.LoginWithApple(TryToLoginWithAppleIdToPlayFab);
             Debug.Log("AppleLoginBtn");
         }
+
+       
+
         /// <summary>
         /// Runs when the register button is clicked
         /// </summary>

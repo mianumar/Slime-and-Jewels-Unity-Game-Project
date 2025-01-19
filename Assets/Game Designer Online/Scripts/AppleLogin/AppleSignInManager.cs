@@ -58,7 +58,7 @@ public class AppleSignInManager : MonoBehaviour
         }
     }
 
-    public void LoginWithApple(Action<IAppleIDCredential, string> playfabCallback)
+    public void LoginWithApple(Action<IAppleIDCredential, string , bool> playfabCallback)
     {
         var rawNonce = GenerateRandomString(32);
         var nonce = GenerateSHA256NonceFromRawNonce(rawNonce);
@@ -93,7 +93,7 @@ public class AppleSignInManager : MonoBehaviour
                     {
                         Debug.Log("playfabCallback CALL" +  appleIdCredential.Email);
                         //AlertManager.ShowAlert($"Firebase callback successfully.");
-                        playfabCallback(appleIdCredential, rawNonce);
+                        playfabCallback(appleIdCredential, rawNonce ,false);
                     }
                     else
                     {
