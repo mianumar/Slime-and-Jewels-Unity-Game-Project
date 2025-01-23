@@ -160,7 +160,7 @@ namespace Game_Designer_Online.Scripts.Misc
         {
             print("Ads are loaded. Ad loaded was " + placementId);
             
-            if (placementId is "Interstitial_Android" or "Interstitial_IOS")
+            if (placementId is "Interstitial_Android" or "Interstitial_iOS")
             {
                 Advertisement.Show(placementId, this);
                 
