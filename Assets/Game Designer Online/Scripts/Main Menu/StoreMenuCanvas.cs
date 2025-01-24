@@ -53,7 +53,7 @@ namespace Game_Designer_Online.Scripts.Main_Menu
         private const string FiveShieldProductId = "fiveshieldnew",
         FiveHealthProductId = "fivehealthnew",
         SeventyFiveTokensProductId = "seventyfivertokensnew",
-        OneHundredAndFiftyTokensProductId = "onehundredandfiftytokens",
+        OneHundredAndFiftyTokensProductId = "onehundredandfiftytokensnew",
         ThreeHundredTokensProductId = "threehundredtokensnew",
         FiveHundredTokensProductId = "fivehundredtokensnew";
 
