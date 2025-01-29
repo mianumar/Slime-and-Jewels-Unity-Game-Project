@@ -4998,6 +4998,34 @@ PrefabInstance:
       propertyPath: m_Name
       value: Get_5_Tokens
       objectReference: {fileID: 0}
+    - target: {fileID: 8648950886500770576, guid: ef55a0f76b75a5f47950138e18f5aa4b, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8648950886500770576, guid: ef55a0f76b75a5f47950138e18f5aa4b, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8648950886500770576, guid: ef55a0f76b75a5f47950138e18f5aa4b, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 8157890719723911747}
+    - target: {fileID: 8648950886500770576, guid: ef55a0f76b75a5f47950138e18f5aa4b, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8648950886500770576, guid: ef55a0f76b75a5f47950138e18f5aa4b, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: LoadRewardedAd
+      objectReference: {fileID: 0}
+    - target: {fileID: 8648950886500770576, guid: ef55a0f76b75a5f47950138e18f5aa4b, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: Game_Designer_Online.Scripts.Main_Menu.MainMenuCanvas, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 8648950886500770576, guid: ef55a0f76b75a5f47950138e18f5aa4b, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []

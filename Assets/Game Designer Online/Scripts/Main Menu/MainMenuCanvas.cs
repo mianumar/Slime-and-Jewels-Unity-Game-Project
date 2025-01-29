@@ -68,6 +68,11 @@ namespace Game_Designer_Online.Scripts.Main_Menu
             _levelToLoad = 2;
         }
 
+        public void LoadRewardedAd()
+        {
+            AdsManagement.Instance.DisplayRewardedAds();
+        }
+
         /// <summary>
         /// Runs when the player Game Button is clicked
         /// </summary>
