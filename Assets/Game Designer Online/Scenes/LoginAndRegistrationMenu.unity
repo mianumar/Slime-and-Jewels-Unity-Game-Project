@@ -1069,6 +1069,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _testMode: 1
+  Inter_iOS: Interstitial_iOS
+  Inter_Android: Interstitial_Android
+  Rewarded_androidAdUnitId: Rewarded_Android
+  Rewarded_iOSAdUnitId: Rewarded_iOS
+  _androidGameId: 5545056
+  _iosGameId: 5545057
 --- !u!1001 &3962656472503537600
 PrefabInstance:
   m_ObjectHideFlags: 0
