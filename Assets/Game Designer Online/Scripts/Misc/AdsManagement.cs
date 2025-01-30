@@ -1,6 +1,7 @@
 using System;
 using System.Collections;
 using Game_Designer_Online.Scripts.Main_Menu;
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.Advertisements;
 
@@ -19,7 +20,7 @@ namespace Game_Designer_Online.Scripts.Misc
         [SerializeField] string Rewarded_androidAdUnitId = "Rewarded_Android";
         [SerializeField] string Rewarded_iOSAdUnitId = "Rewarded_iOS";
 
-        [SerializeField] string adUnitId_Rewarded;
+        string adUnitId_Rewarded;
 
 
         #region Interstitial Ads Functions
@@ -182,6 +183,10 @@ namespace Game_Designer_Online.Scripts.Misc
                 currentTokken += 5;
                 PlayerPrefs.SetInt(StoreMenuCanvas.PlayerTokensKeyReference, currentTokken);
             }
+            else
+            {
+                Debug.Log("Unity Ads Rewarded Ad NOT Completed");
+            }
         }
 
         public void OnUnityAdsShowClick(string placementId)
@@ -208,6 +213,12 @@ namespace Game_Designer_Online.Scripts.Misc
                 
                 // Resetting the ads attempt.
                 AdsAttempt = 0;
+            }
+            else if(placementId is "Rewarded_iOS" or "Rewarded_Android")
+            {
+                Advertisement.Show(placementId, this);
+                Debug.Log("Rewarded Ad shown");
+
             }
         }
 
