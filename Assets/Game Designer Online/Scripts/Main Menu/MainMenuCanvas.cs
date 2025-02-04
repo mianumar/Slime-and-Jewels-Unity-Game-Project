@@ -76,11 +76,7 @@ namespace Game_Designer_Online.Scripts.Main_Menu
          if (Instance == null)
             {
                 Instance = this;
-                DontDestroyOnLoad(gameObject);
-             }
-         else
-             {
-                Destroy(gameObject);
+                //DontDestroyOnLoad(gameObject);
              }
         }
 
