@@ -4134,7 +4134,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_text: You can REMOVE ADS from your game entirely by subscribing. You can either
-    REMOVE ADS for 1 month for $2.99, or for 4 months for $7.99. The subscription
+    REMOVE ADS for 1 month for $2.99, or for 3 months for $5.99. The subscription
     will be handled by your Google Play account.
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: f424bbd4f404bd9e0a32ea05d4f11c72, type: 2}
@@ -4719,7 +4719,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Remove Ads for FOUR MONTHS
+  m_text: Remove Ads for THREE MONTHS
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: f424bbd4f404bd9e0a32ea05d4f11c72, type: 2}
   m_sharedMaterial: {fileID: -3230931339026656200, guid: f424bbd4f404bd9e0a32ea05d4f11c72, type: 2}

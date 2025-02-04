@@ -1147,8 +1147,8 @@ namespace Game_Designer_Online.Scripts.Main_Menu
         /// <summary>
         /// Remove Ads ids for per month product
         /// </summary>
-        private const string RemoveAdsPerMonthProductId = "removeadspermonth_2",
-            RemoveAdsPerFourMonthsProductId = "removeadsforfourmonths_2";
+        private const string RemoveAdsPerMonthProductId = "removeadspermonth_2new",
+            RemoveAdsPerFourMonthsProductId = "removeadsforfourmonths_2new";
 
          /// <summary>
         /// This function should be called in the Awake Method and should be used to setup the store builder
