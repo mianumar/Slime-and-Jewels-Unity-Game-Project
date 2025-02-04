@@ -8,6 +8,7 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 using PlayFab.AdminModels;
+using System.Collections;
 
 namespace Game_Designer_Online.Scripts.Main_Menu
 {
@@ -16,6 +17,7 @@ namespace Game_Designer_Online.Scripts.Main_Menu
     /// </summary>
     public class MainMenuCanvas : MonoBehaviour
     {
+        public static MainMenuCanvas Instance { get; private set; }
         #region Main Menu Landing Buttons and Related Functions
 
         /// <summary>
@@ -23,6 +25,7 @@ namespace Game_Designer_Online.Scripts.Main_Menu
         /// if the player has more than 0 prestige points.
         /// </summary>
         [SerializeField] private TextMeshProUGUI newGameButtonText;
+        [SerializeField] private TMP_Text RewardedAdText;
 
         /// <summary>
         /// This will tell the game which level to load
@@ -68,10 +71,40 @@ namespace Game_Designer_Online.Scripts.Main_Menu
             _levelToLoad = 2;
         }
 
+        private void Awake()
+        {
+         if (Instance == null)
+            {
+                Instance = this;
+                DontDestroyOnLoad(gameObject);
+             }
+         else
+             {
+                Destroy(gameObject);
+             }
+        }
+
         public void LoadRewardedAd()
         {
             AdsManagement.Instance.DisplayRewardedAds();
         }
+
+        public void showRewardTextMessage(string message)
+        {
+            RewardedAdText.text = message;
+
+            StartCoroutine(ClearTextAfterDelay(2f));
+
+        }
+
+    private IEnumerator ClearTextAfterDelay(float delay)
+    {
+        // Wait for the specified delay time
+        yield return new WaitForSeconds(delay);
+        
+        // Clear the text after the delay
+        RewardedAdText.text = "";
+    }
 
         /// <summary>
         /// Runs when the player Game Button is clicked

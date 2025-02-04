@@ -165,6 +165,7 @@ namespace Game_Designer_Online.Scripts.Misc
         public void OnUnityAdsShowFailure(string placementId, UnityAdsShowError error, string message)
         {
             print("Ads failed to show due to " + error + " with message " + message);
+            MainMenuCanvas.Instance.showRewardTextMessage("Ads failed to show due to " + error);
         }
 
         public void OnUnityAdsShowStart(string placementId)
@@ -186,6 +187,7 @@ namespace Game_Designer_Online.Scripts.Misc
             else
             {
                 Debug.Log("Unity Ads Rewarded Ad NOT Completed");
+                MainMenuCanvas.Instance.showRewardTextMessage("Rewarded Ad NOT Completed");
             }
         }
 
